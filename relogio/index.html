@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cronômetro e Temporizador</h1>
+    <div class="app">
+        
+        <section id="cronometro">
+            <h2>Cronômetro</h2>
+            <p id="cronometro-display">00:00:00</p>
+            <div class="buttons-container">
+            <button id="iniciar-cronometro">Iniciar</button>
+            <button id="pausar-cronometro">Pausar</button>
+            <button id="zerar-cronometro">Zerar</button>
+            </div>
+        </section>
+
+        <section id="temporizador">
+            <h2>Temporizador</h2>
+            <p id="temporizador-display">00:00:00</p>
+            <input type="number" id="temporizador-input" placeholder="Definir tempo (segundos)">
+            <div class="buttons-container">
+            <button id="iniciar-temporizador">Iniciar</button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
