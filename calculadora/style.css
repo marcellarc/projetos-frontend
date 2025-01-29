@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100hv;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+.calculadora {
+    background: #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.resultado { 
+    position: relative;
+    background: #444;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 2rem;
+    padding: 40px;
+    text-align: right;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    gap: 5px;
+    background: #000000;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 100px;
+    padding: 20px;
+    cursor: pointer;
+    border-style: none;
+    opacity : 0.8;
+}
+
+/* Botão "C" (limpar) */
+.limpar {
+    background-color: #ff6666; /* Cor de fundo vermelha */
+    color: white; /* Texto branco */
+    font-weight: bold; /* Negrito */
+    border: none; /* Sem borda */
+    border-radius: 100px; /* Borda arredondada */
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Botão "=" (igual) */
+.igual {
+    background-color: #66cc66; /* Cor de fundo verde */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 100px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Adicionando efeito de hover */
+.limpar:hover,
+.igual:hover,
+button:hover {
+    background-color: #444; /* Fundo escurece ao passar o mouse */
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Botão "Apagar" */
+.apagar {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    background-color: #444;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    width: 20px; /* Tamanho do botão */
+    height: 20px; /* Tamanho do botão */
+    display: flex;
+    justify-content: center; /* Centraliza o ícone */
+    align-items: center; /* Centraliza o ícone */
+    cursor: pointer;
+    margin: 5px;
+}
+
+.apagar i:hover {
+    opacity : 0.5;
+    transition: all 0.3s ease;
+}
+
+
+
